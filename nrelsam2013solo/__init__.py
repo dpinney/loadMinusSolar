@@ -12,6 +12,7 @@ from ctypes import *
 myDir = os.path.dirname(__file__)
 
 c_number = c_float # must be c_double or c_float depending on how defined in sscapi.h
+
 class SSCAPI():
 	if sys.platform == 'win32' or sys.platform == 'cygwin':
 		if 8*struct.calcsize("P") == 64:
